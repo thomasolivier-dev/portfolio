@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { MenuItem } from '../../shared/models/menu-items.model';
 
 @Component({
   selector: 'app-navbar',
@@ -8,4 +9,11 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+
+  readonly menuItems: MenuItem[] = [
+      { label: 'À propos', link: '#about' },
+      { label: 'Compétences', link: '#skills' },
+      { label: 'Projets', link: '#projects' },
+      { label: 'Contact', link: '#contact' }
+    ];
 }

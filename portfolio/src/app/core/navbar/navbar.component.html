@@ -1,19 +1,18 @@
 <div class="container">
     <nav class="navbar">
         <div class="logo">
-            <a href="#">ThomasO</a>
+            <a href="/">ThomasO</a>
         </div>
 
         <!-- Menu desktop -->
         <ul class="nav-list">
-            <li><a href="#">À propos</a></li>
-            <li><a href="#">Compétences</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Contact</a></li>
+            @for (item of menuItems; track item.label) {
+                <li><a [href]="item.link">{{item.label}}</a></li>
+            }
         </ul>
 
         <!-- Menu mobile -->
-         <button><img src="images/hamburger-menu.png" alt="Menu"></button>
+         <button onclick="toggleMenu()"><img src="images/hamburger-menu.png" alt="Menu"></button>
 
     </nav>
 </div>
