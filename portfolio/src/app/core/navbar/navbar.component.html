@@ -12,7 +12,18 @@
         </ul>
 
         <!-- Menu mobile -->
-         <button onclick="toggleMenu()"><img src="images/hamburger-menu.png" alt="Menu"></button>
-
+         <button (click)="toggleMenu()"><img src="images/hamburger-menu.png" alt="Menu"></button>
     </nav>
 </div>
+
+@if(isOpenMenu) {
+    <div class="overlay" [@slideFromRight] (click)="closeMenu()">
+        <button class="close-button" (click)="closeMenu()"><img src="images/close-menu.png" alt="Close button"></button>
+        <ul class="mobile-menu" (click)="$event.stopPropagation()">
+            @for (item of menuItems; track item.label) {
+                <li><a [href]="item.link" (click)="closeMenu()">{{item.label}}</a></li>
+            }
+        </ul>
+    </div>
+}
+
