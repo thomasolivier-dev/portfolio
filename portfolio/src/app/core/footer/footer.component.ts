@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { MenuItem } from '../../shared/models/menu-items.model';
+import { menuItems } from '../../shared/constants/app-constants';
 
 @Component({
   selector: 'app-footer',
@@ -8,10 +9,5 @@ import { MenuItem } from '../../shared/models/menu-items.model';
   styleUrl: './footer.component.scss'
 })
 export class FooterComponent {
-  readonly menuItems: MenuItem[] = [
-        { label: 'À propos', link: '#about' },
-        { label: 'Compétences', link: '#skills' },
-        { label: 'Projets', link: '#projects' },
-        { label: 'Contact', link: '#contact' }
-      ];
+  readonly menuItems: MenuItem[] = menuItems
 }

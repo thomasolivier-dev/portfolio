@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MenuItem } from '../../shared/models/menu-items.model';
 import { MenuAnimationsService } from '../../services/animations/menu-animations.service';
+import { menuItems } from '../../shared/constants/app-constants';
 
 @Component({
   selector: 'app-navbar',
@@ -22,10 +23,5 @@ export class NavbarComponent {
     this.isOpenMenu=false;
   }
 
-  readonly menuItems: MenuItem[] = [
-      { label: 'À propos', link: '#about' },
-      { label: 'Compétences', link: '#skills' },
-      { label: 'Projets', link: '#projects' },
-      { label: 'Contact', link: '#contact' }
-    ];
+  readonly menuItems: MenuItem[] = menuItems
 }
