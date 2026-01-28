@@ -1,0 +1,36 @@
+.container {
+    width: 100%;
+    background-color: rgb(9, 0, 38);
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    max-width: 1200px;
+    width: 100%;
+    
+}
+
+.copyright {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    color: hsl(0, 5%, 72%);
+    width: 100%;
+    padding-top: 2rem;
+    border-top-width: 1px;
+    border-top-color: #ffffff2a;    
+}
+
+@media (max-width: 750px) {
+    .copyright {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 350px) {
+    footer {
+        min-width: 350px;
+    }
+}
