@@ -1,6 +1,25 @@
 
 <div class="container">
     <footer>
+        <div class="wraper">
+            <div class="box">
+                <h3 class="name">Thomas O</h3>
+                <p>Développeur FullSatck spécialisé en Java, Angular et administration de base de données</p>
+            </div>
+            <div class="box">
+                <h3 class="title-column">Liens rapide</h3>
+                <ul class="quik-link">
+                    @for (item of menuItems; track item.label) {
+                        <li><a [href]="item.link">{{item.label}}</a></li>
+                    }
+                </ul>
+            </div>
+            <div class="box">
+                <h3 class="title-column">Entrer en contact</h3>
+                <p>Email: thomas.olivier.pro25&#64;gmail.com</p>
+                <p>Téléphone: 06 24 37 63 24</p>
+            </div>
+        </div>
         <span class="copyright">© 2026 Thomas O. All rights reserved.</span>
     </footer>
 </div>
