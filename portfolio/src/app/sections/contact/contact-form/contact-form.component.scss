@@ -48,6 +48,7 @@ textarea::-webkit-scrollbar {
 textarea::-webkit-scrollbar-thumb:vertical {
   background: linear-gradient(to bottom, #3b66f3, #d66ef3);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 textarea::-webkit-scrollbar-corner {
