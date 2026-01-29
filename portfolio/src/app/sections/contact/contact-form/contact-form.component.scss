@@ -65,6 +65,26 @@ textarea::-webkit-scrollbar-track-piece  {
     padding-bottom: 10px;
 }
 
+.container-error {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.container-error i{
+    font-size: 0.875rem;
+    margin-right: 0.5rem;
+    color: #FFD43B;
+}
+
+small {
+    display: block;
+    color: #f44336;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+
 .send-button {
     background: linear-gradient(to right, #3b66f3, #d66ef3);
     width: 100%;
@@ -78,20 +98,26 @@ textarea::-webkit-scrollbar-track-piece  {
     border-radius: 5px;
     margin-top: 1.5rem;
     transition: transform 0.3s ease;
+
+    &:disabled {
+        cursor: not-allowed;
+        background: #cccccc;
+    }
+
+    &:hover:not(:disabled) {
+        transform: scale(1.03);
+    }
 }
 
-.send-button:hover {
-    transform: scale(1.03);
-}
 
-.send-button label {
+.send-button span {
     color: white;
     font-size: 1rem;
     font-weight: 600;
 }
 
 @media (max-width: 750px) {
-    .send-button label {
+    .send-button span {
         font-size: 0.8rem;
     }
 
