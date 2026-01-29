@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from './core/navbar/navbar.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { ContactSectionComponent } from './sections/contact/contact-section/contact-section.component';
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, FooterComponent],
+  imports: [NavbarComponent, FooterComponent, ContactSectionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

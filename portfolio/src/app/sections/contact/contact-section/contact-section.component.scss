@@ -1,0 +1,26 @@
+.background {
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container h2 {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    background: linear-gradient(90deg, #3b66f3, #d66ef3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px;
+}
