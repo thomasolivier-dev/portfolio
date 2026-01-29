@@ -39,7 +39,28 @@
     resize: vertical;
 }
 
-.contact-form .form-input span {
+textarea::-webkit-scrollbar {
+  background: #000;
+  border-radius: 10px;
+  width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb:vertical {
+  background: linear-gradient(to bottom, #3b66f3, #d66ef3);
+  border-radius: 5px;
+}
+
+textarea::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+textarea::-webkit-scrollbar-track-piece  {
+    background-color: black;
+    -webkit-border-radius: 16px;
+    width: 10px;
+}
+
+.contact-form .form-input label {
     color: #ffffffb3;
     padding-bottom: 10px;
 }
@@ -63,14 +84,14 @@
     transform: scale(1.03);
 }
 
-.send-button span {
+.send-button label {
     color: white;
     font-size: 1rem;
     font-weight: 600;
 }
 
 @media (max-width: 750px) {
-    .send-button span {
+    .send-button label {
         font-size: 0.8rem;
     }
 
