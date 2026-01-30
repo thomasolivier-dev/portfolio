@@ -1,0 +1,10 @@
+@if (show) {
+    <div class="container-status" [class.success]="type === 'success'" [class.error]="type === 'error'">
+        <div class="second-circle">
+            <div class="first-circle">
+                <i class="fa-solid icon" [ngClass]="iconClass"></i>
+            </div>
+        </div>
+        <span class="message">{{message}}</span>
+    </div>
+}
