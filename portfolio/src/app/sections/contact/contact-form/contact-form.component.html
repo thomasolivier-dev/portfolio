@@ -81,3 +81,11 @@
 @if (isSubmitting) {
  <app-spinner></app-spinner>
 }
+
+<app-status-feedback
+  [show]="showStatus"
+  [type]="statusType"
+  [message]="statusMessage">
+</app-status-feedback>
+
+
