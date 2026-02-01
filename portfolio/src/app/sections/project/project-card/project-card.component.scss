@@ -24,3 +24,40 @@ p {
         max-width: 10rem;
     }
 }
+
+.link-container {
+    display: flex;
+    gap: 20px;
+    padding-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+i {
+    padding-right: 5px;
+}
+
+.link-git {
+    color: #ff61d8;
+}
+
+.link-git i, 
+.link-web i {
+    transition: transform 0.3s ease;
+}
+
+
+.link-git:hover i {
+    transform: scale(1.2);
+}
+
+.link-web {
+    color: #4cc9f0;
+}
+
+.link-web:hover i {
+    transform: rotatez(45deg)
+}
