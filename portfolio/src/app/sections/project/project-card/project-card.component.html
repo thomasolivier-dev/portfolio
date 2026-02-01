@@ -1,14 +1,27 @@
 <div class="card">
-    <h3>ThomasO - Portfolio</h3>
-    <p>Mon portfolio de développeur Full Stack java et Angular</p>
+    <div class="container-image">
+        <div class="monitor">
+            <img [src]="imagePath" alt="image projet"/>
+            <div class="monitor-stand">
+                <div class="stand-neck"></div>
+                <div class="stand-base"></div>
+            </div>
+        </div>
+    </div>
+    <h3>{{title}}</h3>
+    <p>{{desc}}</p>
     <div class="link-container">
-        <a href="#" class="link-git">
-            <i class="fa-brands fa-github"></i>
-            <span>Voir code</span>
-        </a>
-        <a href="#" class="link-web">
-            <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
-            <span>Lien du site</span>
-        </a>
+        @if (githubUrl != undefined) {
+            <a [href]="githubUrl" class="link-git" aria-label="Voir le github du projet" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i>
+                <span>Voir code</span>
+            </a>
+        }
+        @if (siteUrl != undefined) {
+            <a [href]="siteUrl" class="link-web" aria-label="Voir le projet" target="_blank" rel="noopener">
+                <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                <span>Lien du site</span>
+            </a>
+        }
     </div>
 </div>

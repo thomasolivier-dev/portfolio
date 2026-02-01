@@ -2,9 +2,16 @@
     <div class="container">
         <h2>Mes projets</h2>
         <div class="grid-project">
-            <app-project-card></app-project-card>
-            <app-project-card></app-project-card>
-            <app-project-card></app-project-card>
+            @for (project of projects; track $index) {
+                <app-project-card
+                    [title]="project.title"
+                    [desc]="project.desc"
+                    [siteUrl]="project.siteUrl"
+                    [githubUrl]="project.githubUrl"
+                    [imagePath]="project.image"
+                >
+                </app-project-card>
+            }
         </div>
     </div>
 </div>
