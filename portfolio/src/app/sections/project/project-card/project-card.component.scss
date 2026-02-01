@@ -97,13 +97,16 @@ i {
     transition: transform 0.3s ease;
 }
 
-
 .link-git:hover i {
     transform: scale(1.2);
 }
 
 .link-web {
     color: #4cc9f0;
+}
+
+.icon-web {
+    font-size: 0.85rem;
 }
 
 .link-web:hover i {
