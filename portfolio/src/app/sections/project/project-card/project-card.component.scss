@@ -1,0 +1,26 @@
+.card {
+    border: 1px solid #ffffffb3;
+    border-radius: 15px;
+    padding: 15px;
+    max-width: 32.5rem;
+}
+
+h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 650;
+    margin: 0;
+    padding-bottom: 8px;
+}
+
+p {
+    color: #ffffffb3;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 650) {
+    .card {
+        max-width: 10rem;
+    }
+}
