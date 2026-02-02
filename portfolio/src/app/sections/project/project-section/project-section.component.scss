@@ -15,6 +15,7 @@ h2 {
     -webkit-background-clip: text;
     color: transparent;
     padding: 10px;
+    padding-bottom: 4rem;
 }
 
 .container {
@@ -27,7 +28,16 @@ h2 {
 .grid-project {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
     gap: 2rem;
+}
+
+.grid-project:has(> :only-child) > * {
+  grid-column: 2;
+}
+
+.grid-project:has(> :nth-child(2):last-child) {
+  grid-template-columns: repeat(2, 0.75fr);
 }
 
 @media (max-width: 950px) {
