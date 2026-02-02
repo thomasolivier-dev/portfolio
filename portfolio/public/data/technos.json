@@ -1,0 +1,128 @@
+[
+  {
+    "id": "angular",
+    "name": "Angular",
+    "imagePath": "images/technos/angular.png",
+    "description": "Framework TypeScript"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "imagePath": "images/technos/java.png",
+    "description": "Langage backend"
+  },
+  {
+    "id": "spring",
+    "name": "Spring Boot",
+    "imagePath": "images/technos/spring.png",
+    "description": "Framework Java"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "imagePath": "images/technos/typescript.png",
+    "description": "JavaScript typé"
+  },
+  {
+    "id": "tailwind",
+    "name": "Tailwind CSS",
+    "imagePath": "images/technos/tailwind.png",
+    "description": "Framework CSS utility-first"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "imagePath": "images/technos/git.png",
+    "description": "Gestionnaire de versions"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "imagePath": "images/technos/docker.png",
+    "description": "Conteneurisation d'applications"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "imagePath": "images/technos/python.png",
+    "description": "Langage polyvalent"
+  },
+  {
+    "id": "django",
+    "name": "Django",
+    "imagePath": "images/technos/django.png",
+    "description": "Framework Python web"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "imagePath": "images/technos/javascript.png",
+    "description": "Langage du web"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "imagePath": "images/technos/react.png",
+    "description": "Bibliothèque UI JavaScript"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "imagePath": "images/technos/nodejs.png",
+    "description": "Runtime JavaScript serveur"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "imagePath": "images/technos/postgresql.png",
+    "description": "Base de données relationnelle"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "imagePath": "images/technos/mongodb.png",
+    "description": "Base de données NoSQL"
+  },
+  {
+    "id": "sass",
+    "name": "Sass",
+    "imagePath": "images/technos/sass.png",
+    "description": "Préprocesseur CSS"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "imagePath": "images/technos/kubernetes.png",
+    "description": "Orchestration de conteneurs"
+  },
+  {
+    "id": "gitlab",
+    "name": "GitLab",
+    "imagePath": "images/technos/gitlab.png",
+    "description": "Plateforme DevOps"
+  },
+  {
+    "id": "github",
+    "name": "GitHub",
+    "imagePath": "images/technos/github.png",
+    "description": "Hébergement de code"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "imagePath": "images/technos/mysql.png",
+    "description": "Base de données SQL"
+  },
+  {
+    "id": "html",
+    "name": "HTML5",
+    "imagePath": "images/technos/html.png",
+    "description": "Langage de balisage"
+  },
+  {
+    "id": "css",
+    "name": "CSS3",
+    "imagePath": "images/technos/css.png",
+    "description": "Feuilles de style"
+  }
+]

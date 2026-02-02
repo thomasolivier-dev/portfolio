@@ -10,6 +10,18 @@
     </div>
     <h3>{{title}}</h3>
     <p>{{desc}}</p>
+    @if (listTechno != undefined) {
+        <div class="techno-container">
+            @for (techno of listTechno; track $index; let i = $index) {
+                <app-image-tooltip
+                [imagePath]="techno.imagePath"
+                [technoName]="techno.name"
+                [technoDesc]="techno.description"
+                [style.zIndex]="i"
+                ></app-image-tooltip>
+            }
+        </div>
+    }
     <div class="link-container">
         @if (githubUrl != undefined) {
             <a [href]="githubUrl" class="link-git" aria-label="Voir le github du projet" target="_blank" rel="noopener">
