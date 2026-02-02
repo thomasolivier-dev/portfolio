@@ -3,7 +3,7 @@
     "id": "angular",
     "name": "Angular",
     "imagePath": "images/technos/angular.png",
-    "description": "Framework TypeScript"
+    "description": "Framework frontend"
   },
   {
     "id": "java",
@@ -15,19 +15,19 @@
     "id": "spring",
     "name": "Spring Boot",
     "imagePath": "images/technos/spring.png",
-    "description": "Framework Java"
+    "description": "Framework backend"
   },
   {
     "id": "typescript",
     "name": "TypeScript",
     "imagePath": "images/technos/typescript.png",
-    "description": "JavaScript typé"
+    "description": "Langage"
   },
   {
     "id": "tailwind",
     "name": "Tailwind CSS",
     "imagePath": "images/technos/tailwind.png",
-    "description": "Framework CSS utility-first"
+    "description": "Framework CSS"
   },
   {
     "id": "git",
@@ -45,49 +45,43 @@
     "id": "python",
     "name": "Python",
     "imagePath": "images/technos/python.png",
-    "description": "Langage polyvalent"
+    "description": "Langage"
   },
   {
     "id": "django",
     "name": "Django",
     "imagePath": "images/technos/django.png",
-    "description": "Framework Python web"
+    "description": "Framework backend"
   },
   {
     "id": "javascript",
     "name": "JavaScript",
     "imagePath": "images/technos/javascript.png",
-    "description": "Langage du web"
+    "description": "Langage"
   },
   {
     "id": "react",
     "name": "React",
     "imagePath": "images/technos/react.png",
-    "description": "Bibliothèque UI JavaScript"
+    "description": "Framework frontend"
   },
   {
     "id": "nodejs",
     "name": "Node.js",
     "imagePath": "images/technos/nodejs.png",
-    "description": "Runtime JavaScript serveur"
+    "description": "Serveur javascript"
   },
   {
     "id": "postgresql",
     "name": "PostgreSQL",
     "imagePath": "images/technos/postgresql.png",
-    "description": "Base de données relationnelle"
+    "description": "Base de données SQL"
   },
   {
     "id": "mongodb",
     "name": "MongoDB",
     "imagePath": "images/technos/mongodb.png",
     "description": "Base de données NoSQL"
-  },
-  {
-    "id": "sass",
-    "name": "Sass",
-    "imagePath": "images/technos/sass.png",
-    "description": "Préprocesseur CSS"
   },
   {
     "id": "kubernetes",
@@ -117,12 +111,12 @@
     "id": "html",
     "name": "HTML5",
     "imagePath": "images/technos/html.png",
-    "description": "Langage de balisage"
+    "description": "Langage"
   },
   {
     "id": "css",
     "name": "CSS3",
     "imagePath": "images/technos/css.png",
-    "description": "Feuilles de style"
+    "description": "Langage"
   }
 ]
