@@ -7,7 +7,6 @@ import { Techno } from '../shared/models/techno.model';
   providedIn: 'root'
 })
 export class TechnoService {
-  private technos: Techno[] = [];
 
   constructor(private http: HttpClient) { }
 

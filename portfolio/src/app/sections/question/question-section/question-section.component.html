@@ -2,7 +2,9 @@
     <div class="container">
         <h2>Curieux ?</h2>
         <div class="wrapper">
-                <app-accordion-item></app-accordion-item>      
+                @for (item of questionList; track $index) {
+                    <app-accordion-item [question]="item.question" [anwser]="item.anwser"></app-accordion-item> 
+                }     
         </div>
     </div>
 </div>
