@@ -1,0 +1,38 @@
+.section-container {
+    background: linear-gradient(to bottom, transparent, #5D2CA8);
+    background-color: black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #3b66f3, #d66ef3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px;
+    padding-bottom: 4rem;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+app-accordion-item {
+    width: 100%;
+}
