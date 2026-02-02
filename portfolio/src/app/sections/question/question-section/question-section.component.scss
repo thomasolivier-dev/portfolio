@@ -4,7 +4,8 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 1rem 0;
+    padding-bottom: 10rem;
+    padding-top: 5rem;
 }
 
 .container {
@@ -29,11 +30,19 @@ h2 {
 
 .wrapper {
     width: 100%;
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 10px;
 }
 
 app-accordion-item {
     width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 90%;
+    }
 }
