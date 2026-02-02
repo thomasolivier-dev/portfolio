@@ -2,7 +2,7 @@
     <div class="question">
         <span>{{question}}</span>
         <button type="button" (click)="isOpen = !isOpen">
-                <i class="fa-solid fa-angle-up" [class.fa-rotate-180]="isOpen"></i>
+                <i class="fa-solid fa-angle-up" [class.fa-rotate-180]="!isOpen"></i>
         </button>
     </div>
     @if (isOpen) {

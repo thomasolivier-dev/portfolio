@@ -1,6 +1,22 @@
 [
     {
-        "question": "pourquoi",
-        "anwser": "res"
+        "question": "Pourquoi ce portfolio ?",
+        "anwser": "J’ai créé ce portfolio afin de présenter mes compétences techniques ainsi que ma vision du métier de développeur full stack. Il a pour objectif de permettre à chacun de mieux comprendre mon travail, ma façon de concevoir des projets et la valeur que peut apporter mon métier."
+    },
+    {
+        "question": "Pourquoi avoir choisi le développement full stack ?",
+        "anwser": "J’ai choisi le développement full stack par passion pour les nouvelles technologies et pour la liberté qu’il offre dans la création de projets complets. Pouvoir donner vie à des idées et concevoir des solutions utiles est une source de motivation et de satisfaction personnelle."
+    },
+    {
+        "question": "Une journée type de développeur ?",
+        "anwser": "Une journée type pour moi commence par un moment de veille technologique afin de rester informé des dernières nouveautés et bonnes pratiques. Ensuite, je planifie mes tâches, que ce soit individuellement ou en équipe selon le projet. La journée se poursuit par le développement et la réalisation concrète des fonctionnalités prévues, tout en m’assurant de produire un code de qualité et bien structuré."
+    },
+    {
+        "question": "Qu’est-ce qui me différencie des autres développeurs ?",
+        "anwser": "Ce qui me distingue, c’est ma capacité à comprendre les besoins réels et à me mettre à la place des futurs utilisateurs. Cela me permet de livrer des solutions non seulement techniquement solides, mais aussi réellement utiles et efficaces. Je me démarque également par ma créativité et ma recherche de solutions innovantes, tout en portant une attention particulière aux moindres détails."
+    },
+    {
+        "question": "Pourquoi n'ai-je qu'un seul dépôt Git public ?",
+        "anwser": "Ce projet est actuellement le seul rendu public sur GitHub. La majorité de mes autres projets sont soit confidentiels, soit encore en cours de développement, mais je peux en parler ou en présenter certains sur demande."
     }
 ]
