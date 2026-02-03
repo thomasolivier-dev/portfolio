@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
 import * as icons from 'lucide-angular';
+import { TechnoSkill } from '../../../shared/models/techno.model';
 
 @Component({
   selector: 'app-skill-card',
@@ -11,6 +12,7 @@ import * as icons from 'lucide-angular';
 export class SkillCardComponent {
   @Input() title!: string;
   @Input() icon!: string;
+  @Input() technos!: TechnoSkill[];
   
   iconData: any;
 
@@ -25,6 +27,10 @@ export class SkillCardComponent {
       .join('');
     
     return (icons as any)[iconName];
+  }
+
+  getStars(rating: number): boolean[] {
+    return Array(5).fill(false).map((_, index) => index < rating);
   }
 
 }

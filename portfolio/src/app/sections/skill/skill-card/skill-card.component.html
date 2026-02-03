@@ -1,6 +1,38 @@
 <div class="skill-card">
-    <div class="card-title">
-        <lucide-icon [img]="iconData"></lucide-icon>
-        <span>{{title}}</span>
+  <div class="card-title">
+    <lucide-icon [img]="iconData"></lucide-icon>
+    <span>{{title}}</span>
+  </div>
+  <div class="grid">
+    <div class="skill-item">
+      <div class="skill-content">
+        <img src="images/technos/angular.png"/>
+        <span>Angular</span>
+      </div>
+      <div class="skill-rating">
+        <div class="stars">
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star filled">★</span>
+          <span class="star">★</span>
+        </div>
+      </div>
     </div>
-</div>>
+    @for (techno of technos; track $index) {
+        <div class="skill-item">
+            <div class="skill-content">
+                <img [src]="techno.imagePath"/>
+                <span>{{techno.name}}</span>
+            </div>
+            <div class="skill-rating">
+                <div class="stars">
+                    @for (filled of getStars(techno.rating); track $index) {
+                    <span class="star" [class.filled]="filled">★</span>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+  </div>
+</div>

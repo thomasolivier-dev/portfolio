@@ -4,3 +4,10 @@ export interface Techno {
   imagePath: string;
   description: string;
 }
+
+
+export interface TechnoSkill {
+  name: string;
+  imagePath: string;
+  rating: number;
+}
