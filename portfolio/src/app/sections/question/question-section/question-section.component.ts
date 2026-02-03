@@ -17,7 +17,6 @@ export class QuestionSectionComponent {
   ngOnInit() {
     this.questionService.loadQuestions().subscribe(questions => {
       this.questionList = questions;
-      console.log(questions)
     });
   }
 
