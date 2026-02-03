@@ -11,7 +11,9 @@
 
 .stars-layer-1,
 .stars-layer-2,
-.stars-layer-3 {
+.stars-layer-3,
+.stars-layer-4
+ {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -46,6 +48,60 @@
   animation: zoom 12s alternate infinite, twinkle 3s infinite;
   animation-delay: -3s;
 }
+
+.stars-layer-4 {
+  opacity: 0.6;
+
+  box-shadow:
+    -48vw -45vh 1px 1px #fff,
+    -42vw -10vh 1px 1px #fff,
+    -40vw 25vh 1px 1px #fff,
+    -38vw 40vh 1px 1px #fff,
+    -35vw -30vh 1px 1px #fff,
+    -33vw 5vh 1px 1px #fff,
+    -30vw -20vh 1px 1px #fff,
+    -28vw 45vh 1px 1px #fff,
+    -25vw -5vh 1px 1px #fff,
+    -22vw 30vh 1px 1px #fff,
+
+    -18vw -40vh 1px 1px #fff,
+    -15vw 10vh 1px 1px #fff,
+    -12vw 48vh 1px 1px #fff,
+    -10vw -25vh 1px 1px #fff,
+    -8vw 20vh 1px 1px #fff,
+    -5vw 35vh 1px 1px #fff,
+    -2vw -10vh 1px 1px #fff,
+    0vw 0vh 1px 1px #fff,
+    3vw 42vh 1px 1px #fff,
+    5vw -15vh 1px 1px #fff,
+
+    8vw 18vh 1px 1px #fff,
+    10vw -30vh 1px 1px #fff,
+    12vw 35vh 1px 1px #fff,
+    15vw -5vh 1px 1px #fff,
+    18vw 40vh 1px 1px #fff,
+    20vw 15vh 1px 1px #fff,
+    22vw -45vh 1px 1px #fff,
+    25vw 5vh 1px 1px #fff,
+    28vw -20vh 1px 1px #fff,
+    30vw -35vh 1px 1px #fff,
+
+    33vw 10vh 1px 1px #fff,
+    35vw -10vh 1px 1px #fff,
+    38vw 25vh 1px 1px #fff,
+    40vw -40vh 1px 1px #fff,
+    42vw 5vh 1px 1px #fff,
+    45vw 30vh 1px 1px #fff,
+    47vw -25vh 1px 1px #fff,
+    48vw 15vh 1px 1px #fff,
+    50vw -5vh 1px 1px #fff,
+    50vw 45vh 1px 1px #fff;
+
+  animation: zoom 25s alternate infinite;
+}
+
+
+
 
 @keyframes zoom {
   0% {
