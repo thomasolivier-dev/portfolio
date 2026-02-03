@@ -5,7 +5,9 @@
     display: flex;
     justify-content: center;
     border-top-width: 1px;
-    border-top-color: #ffffff2a; 
+    border-top-color: #ffffff2a;
+    position: relative;
+    z-index: 5;
 }
 
 footer {
