@@ -8,7 +8,6 @@
 
 h2 {
     text-align: center;
-    color: white;
     font-size: 3rem;
     background: linear-gradient(90deg, #3b66f3, #d66ef3);
     background-clip: text;
@@ -44,6 +43,15 @@ h2 {
     .grid-project {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid-project:has(> :only-child) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .grid-project:has(> :only-child) > * {
+    width: 70%;
+  }
 }
 
 @media (max-width: 650px) {
@@ -52,5 +60,14 @@ h2 {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .grid-project:has(> :only-child) > * {
+        width: unset;
     }
 }

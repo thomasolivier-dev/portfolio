@@ -4,10 +4,13 @@ import { FooterComponent } from './core/footer/footer.component';
 import { ContactSectionComponent } from './sections/contact/contact-section/contact-section.component';
 import { ProjectSectionComponent } from './sections/project/project-section/project-section.component';
 import { QuestionSectionComponent } from './sections/question/question-section/question-section.component';
+import { SkillSectionComponent } from './sections/skill/skill-section/skill-section.component';
 
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent, FooterComponent, ContactSectionComponent, ProjectSectionComponent, QuestionSectionComponent],
+  imports: [NavbarComponent, FooterComponent, ContactSectionComponent, ProjectSectionComponent, QuestionSectionComponent,
+    SkillSectionComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
