@@ -5,11 +5,12 @@ import { ContactSectionComponent } from './sections/contact/contact-section/cont
 import { ProjectSectionComponent } from './sections/project/project-section/project-section.component';
 import { QuestionSectionComponent } from './sections/question/question-section/question-section.component';
 import { SkillSectionComponent } from './sections/skill/skill-section/skill-section.component';
+import { StarBackgroundComponent } from './shared/components/background/star-background/star-background.component';
 
 @Component({
   selector: 'app-root',
   imports: [NavbarComponent, FooterComponent, ContactSectionComponent, ProjectSectionComponent, QuestionSectionComponent,
-    SkillSectionComponent,
+    SkillSectionComponent, StarBackgroundComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

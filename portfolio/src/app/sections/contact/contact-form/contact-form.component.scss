@@ -5,6 +5,9 @@
     margin: 1rem 2rem;
     padding: 1rem;
     border-radius: 15px;
+    z-index: 5;
+    position: relative;
+    background-color: black;
 }
 
 .form-input {
@@ -15,7 +18,7 @@
 
 .contact-form {
     width: 100%;
-    padding: 1rem;;
+    padding: 1rem;
 }
 
 .contact-form input,
