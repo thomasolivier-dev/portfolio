@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { LucideAngularModule } from 'lucide-angular';
 import * as icons from 'lucide-angular';
 import { TechnoSkill } from '../../../shared/models/techno.model';
+import { TechnoService } from '../../../services/techno.service';
 
 @Component({
   selector: 'app-skill-card',
@@ -12,12 +13,18 @@ import { TechnoSkill } from '../../../shared/models/techno.model';
 export class SkillCardComponent {
   @Input() title!: string;
   @Input() icon!: string;
-  @Input() technos!: TechnoSkill[];
+  @Input() type!: string;
   
   iconData: any;
+  public technos: TechnoSkill[] = [];
+
+  constructor(private technoService: TechnoService) {}
 
   ngOnInit() {
     this.iconData = this.getIcon(this.icon);
+    this.technoService.loadTechnosByType(this.type).subscribe(technos => {
+      this.technos = technos;
+    })
   }
 
   private getIcon(name: string) {

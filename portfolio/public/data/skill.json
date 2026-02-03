@@ -1,0 +1,157 @@
+{
+  "backend": [
+    {
+      "name": "Java",
+      "imagePath": "images/technos/java.png",
+      "rating": 5
+    },
+    {
+      "name": "Spring",
+      "imagePath": "images/technos/spring.png",
+      "rating": 5
+    },
+    {
+      "name": "Python",
+      "imagePath": "images/technos/python.png",
+      "rating": 4
+    },
+    {
+      "name": "Django",
+      "imagePath": "images/technos/django.png",
+      "rating": 4
+    },
+    {
+      "name": "NodeJS",
+      "imagePath": "images/technos/nodejs.png",
+      "rating": 3
+    },
+    {
+      "name": "API Rest",
+      "imagePath": "images/technos/rest.png",
+      "rating": 5
+    }
+  ],
+  "frontend": [
+    {
+      "name": "Javascript",
+      "imagePath": "images/technos/javascript.png",
+      "rating": 5
+    },
+    {
+      "name": "TypeScript",
+      "imagePath": "images/technos/typescript.png",
+      "rating": 4
+    },
+    {
+      "name": "Angular",
+      "imagePath": "images/technos/angular.png",
+      "rating": 5
+    },
+    {
+      "name": "React",
+      "imagePath": "images/technos/react.png",
+      "rating": 4
+    },
+    {
+      "name": "HTML",
+      "imagePath": "images/technos/html.png",
+      "rating": 5
+    },
+    {
+      "name": "CSS",
+      "imagePath": "images/technos/css.png",
+      "rating": 4
+    },
+    {
+      "name": "TailwindCSS",
+      "imagePath": "images/technos/tailwind.png",
+      "rating": 3
+    }
+  ],
+  "database": [
+    {
+      "name": "MySQL",
+      "imagePath": "images/technos/mysql.png",
+      "rating": 5
+    },
+    {
+      "name": "PostgreSQL",
+      "imagePath": "images/technos/postgresql.png",
+      "rating": 5
+    },
+    {
+      "name": "SQL Server",
+      "imagePath": "images/technos/sqlserver.png",
+      "rating": 5
+    },
+    {
+      "name": "MongoDB",
+      "imagePath": "images/technos/mongodb.png",
+      "rating": 3
+    }
+  ],
+   "outils": [
+    {
+      "name": "Git",
+      "imagePath": "images/technos/git.png",
+      "rating": 5
+    },
+    {
+      "name": "GitHub",
+      "imagePath": "images/technos/github.png",
+      "rating": 5
+    },
+    {
+      "name": "VS Code",
+      "imagePath": "images/technos/vscode.png",
+      "rating": 5
+    },
+    {
+      "name": "IntelliJ",
+      "imagePath": "images/technos/intellij.png",
+      "rating": 4
+    },
+    {
+      "name": "Docker",
+      "imagePath": "images/technos/docker.png",
+      "rating": 4
+    },
+    {
+      "name": "Postman",
+      "imagePath": "images/technos/postman.png",
+      "rating": 5
+    },
+    {
+      "name": "Kafka",
+      "imagePath": "images/technos/kafka.png",
+      "rating": 3
+    },
+    {
+      "name": "Keycloak",
+      "imagePath": "images/technos/keycloak.png",
+      "rating": 3
+    }
+  ],
+   "gestion-projet": [
+    {
+      "name": "Agile/Scrum",
+      "imagePath": "images/technos/agile.png",
+      "rating": 5
+    },
+    {
+      "name": "Jira",
+      "imagePath": "images/technos/jira.png",
+      "rating": 5
+    },
+        {
+      "name": "Slack",
+      "imagePath": "images/technos/slack.png",
+      "rating": 4
+    },
+    {
+      "name": "Trello",
+      "imagePath": "images/technos/trello.png",
+      "rating": 3
+    }
+  ]
+}
