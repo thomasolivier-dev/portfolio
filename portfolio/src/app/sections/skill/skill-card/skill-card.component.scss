@@ -148,3 +148,23 @@
     transform: scale(1.2);
   }
 }
+
+@media (max-width: 768px) {
+  .card-title span {
+    font-size: 1.2rem;
+  }
+
+  .card-title lucide-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+  }
+
+  .skill-content img {
+    width: 1.3em;
+    height: 1.3rem;
+  }
+
+  .skill-content span {
+    font-size: 0.7rem;
+  }
+}

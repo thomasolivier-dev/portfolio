@@ -7,6 +7,17 @@
   overflow: hidden;
   pointer-events: none;
   z-index: 1;
+
+  &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-image: 
+            radial-gradient(circle at 20% 50%, rgba(59, 102, 243, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(214, 110, 243, 0.15) 0%, transparent 50%);
+        pointer-events: none;
+        z-index: 1;
+    }
 }
 
 .stars-layer-1,
