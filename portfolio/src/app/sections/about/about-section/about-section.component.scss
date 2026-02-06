@@ -13,6 +13,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 5;
 }
 
 h2 {
@@ -40,13 +42,29 @@ h2 {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .about {
     grid-column: 2;
     grid-row: 1;
-    padding: 1rem;
     color: white;
+    margin: 0;
+}
+
+h3 {
+    background: linear-gradient(180deg, #698cfd, #de65ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.about p {
+    line-height: 1.05rem;
+    word-spacing: 3px;
 }
 
 .grid-info {
@@ -58,16 +76,37 @@ h2 {
 }
 
 .exp {
-    border: 1px solid red;
+    background: linear-gradient(135deg, rgba(99, 33, 99, 0.1), rgba(99, 33, 99, 0.05));
+    border: 1px solid rgba(99, 33, 99, 0.759);
     border-radius: 10px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
+    gap: 10px;
+    padding: 1.5rem 1rem;
     grid-column: 1;
     grid-row: 1;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 33, 99, 0.1);
+}
+
+.exp-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.exp-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(225, 0, 255);
+}
+
+.exp-label {
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
 .cv {
@@ -75,17 +114,36 @@ h2 {
     text-decoration: none;
     color: white;
     grid-row: 1;
-    border: 1px solid red;
+    background: linear-gradient(135deg, rgba(34, 133, 240, 0.1), rgba(18, 40, 63, 0.05));
+    border: 1px solid rgba(34, 133, 240, 0.3);
     border-radius: 10px;
     display: flex;
     align-items: center;
+    gap: 8px;
+    padding: 1.5rem 1rem;
     justify-content: center;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(34, 133, 240, 0.1);
 }
 
-.exp:hover, .cv:hover {
-    transform: scale(1.02);
+.exp:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(225, 0, 255, 0.3);
+    border-color: rgb(225, 0, 255);
+    background: linear-gradient(135deg, rgba(99, 33, 99, 0.2), rgba(99, 33, 99, 0.1));
 }
+
+.cv:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(34, 133, 240, 0.3);
+    border-color: #2285f0;
+    background: linear-gradient(135deg, rgba(34, 133, 240, 0.2), rgba(18, 40, 63, 0.1));
+}
+
+.exp i, .cv i {
+    font-size: 1.5rem;
+}
+
 
 @media (max-width: 768px) {
     .section-container {
@@ -96,16 +154,17 @@ h2 {
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        gap: 0px;
+        gap: 20px;
     }
 
     .about {
         grid-column: unset;
         grid-row: unset;
+        font-size: 0.9rem;
     }
 
     .container {
-        width: 100%;
+        width: 90%;
     }
 
     h2 {
@@ -119,10 +178,24 @@ h2 {
 
     .exp {
         padding: 1rem;
+        font-size: 0.8rem;
     }
 
     .cv {
         padding: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .exp i, .cv i {
+        font-size: 1rem;
+    }
+
+    .exp-number {
+        font-size: 1.2rem;
+    }
+
+    .exp-label {
+        font-size: 0.65rem;
     }
 }
 
