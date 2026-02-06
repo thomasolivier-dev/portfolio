@@ -7,5 +7,6 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideAnimations(),
     provideHttpClient(),
-  ]
+  ],
+
 };
