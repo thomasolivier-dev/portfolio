@@ -1,0 +1,128 @@
+.section-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(90deg, #3b66f3, #d66ef3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding: 10px;
+    padding-bottom: 4rem;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1.3fr 0.7fr;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.image-deco {
+    grid-row: 1 / 3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 1rem;
+    color: white;
+}
+
+.grid-info {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.exp {
+    border: 1px solid red;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    grid-column: 1;
+    grid-row: 1;
+    transition: transform 0.3s ease;
+}
+
+.cv {
+    grid-column: 2;
+    text-decoration: none;
+    color: white;
+    grid-row: 1;
+    border: 1px solid red;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.exp:hover, .cv:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+    .section-container {
+        padding-bottom: 4rem;
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 0px;
+    }
+
+    .about {
+        grid-column: unset;
+        grid-row: unset;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    h2 {
+        font-size: 2.1rem;
+        padding-bottom: 2rem;
+    }
+
+    .image-deco {
+        max-height: 200px;
+    }
+
+    .exp {
+        padding: 1rem;
+    }
+
+    .cv {
+        padding: 1rem;
+    }
+}
+
