@@ -1,6 +1,6 @@
 # Portfolio
 
-Site portfolio développé avec Angular pour présenter mes compétences, mes projets et mon parcours de développeur. Ce projet me permet également d'expérimenter les bonnes pratiques Angular, l'architecture moderne et les nouvelles fonctionnalités du framework.
+xSite portfolio développé avec Angular pour présenter mes compétences, mes projets et mon parcours de développeur. Ce projet me permet également d'expérimenter les bonnes pratiques Angular, l'architecture moderne et les nouvelles fonctionnalités du framework.
 
 ## Prérequis
 
@@ -34,6 +34,23 @@ cd portfolio
 ```bash
 npm install
 ```
+
+3. Configurez les variables d'environnement :
+
+Créez ou modifiez le fichier `src/environments/environment.ts` avec vos propres clés EmailJS :
+```typescript
+export const environment = {
+  production: false,
+  emailjs: {
+    serviceId: 'votre_service_id',
+    templateId: 'votre_template_id',
+    publicKey: 'votre_public_key'
+  }
+};
+```
+
+> **Note** : Pour obtenir vos clés EmailJS, créez un compte sur [EmailJS](https://www.emailjs.com/) et configurez votre service d'envoi d'emails.
+
 
 ## Lancement du projet
 
