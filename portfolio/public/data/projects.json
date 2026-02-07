@@ -3,7 +3,7 @@
     "title": "ThomasO - Portfolio",
     "desc": "Mon portfolio de développeur Full Stack java et Angular",
     "githubUrl": "https://github.com/thomasolivier-dev/portfolio",
-    "siteUrl": "http://localhost:4200",
+    "siteUrl": "https://portfolio-thomas-olivier.vercel.app/",
     "image": "/images/projet-portfolio.png",
     "technos": ["angular", "typescript", "html", "css", "git"]
   }  
