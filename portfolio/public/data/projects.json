@@ -6,5 +6,5 @@
     "siteUrl": "http://localhost:4200",
     "image": "/images/projet-portfolio.png",
     "technos": ["angular", "typescript", "html", "css", "git"]
-  }
+  }  
 ]
