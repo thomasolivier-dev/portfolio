@@ -1,22 +1,32 @@
-<section id="about">
+<section id="about" aria-labelledby="about-heading">
     <div class="container">
-        <h2>Présentation</h2>
+        <h2 id="about-heading">Présentation</h2>
         <div class="grid">
-            <img class="image-deco" src="images/code.png" alt="image code décoratif"/>
+            <img 
+                class="image-deco" 
+                src="images/code.png" 
+                alt="Illustration décorative montrant du code sur un écran d'ordinateur"
+                loading="lazy"
+            />
             <div class="about">
                 <h3>À propos de moi</h3>
                 <p>{{descriptionText}}</p>
             </div>
-            <div class="grid-info">
-                <div class="exp">
-                    <i class="fa-solid fa-code"></i>
+            <div class="grid-info" role="group" aria-label="Informations professionnelles">
+                <div class="exp" role="article" aria-label="Expérience professionnelle">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
                     <div class="exp-content">
                         <span class="exp-number">1 an</span>
                         <span class="exp-label">d'expérience</span>
                     </div>
                 </div>
-                <a class="cv" href="cv/CV.pdf" download="Thomas-Olivier-CV.pdf">
-                    <i class="fa-solid fa-download"></i>
+                <a 
+                    class="cv" 
+                    href="cv/CV.pdf" 
+                    download="Thomas-Olivier-CV.pdf"
+                    aria-label="Télécharger mon CV au format PDF"
+                >
+                    <i class="fa-solid fa-download" aria-hidden="true"></i>
                     <span>Consultez mon CV</span>
                 </a>
             </div>
