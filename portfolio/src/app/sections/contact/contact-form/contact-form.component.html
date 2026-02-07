@@ -1,56 +1,130 @@
 <div class="form-container">
-    <form class="contact-form" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+    <form 
+        class="contact-form" 
+        [formGroup]="contactForm" 
+        (ngSubmit)="onSubmit()"
+        aria-label="Formulaire de contact"
+        novalidate
+    >
         <div class="form-input">
-            <label for="name">Nom</label>
-            <input type="text" placeholder="Nom" id="name" autocomplete="name" formControlName="name">
-            <div class="container-error">
+            <label for="name">
+                Nom <span aria-label="requis">*</span>
+            </label>
+            <input 
+                type="text" 
+                placeholder="Entrez votre nom" 
+                id="name" 
+                autocomplete="name" 
+                formControlName="name"
+                [attr.aria-invalid]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched"
+                [attr.aria-describedby]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched ? 'name-error' : null"
+                aria-required="true"
+            >
+            <div 
+                class="container-error" 
+                id="name-error"
+                role="alert"
+                aria-live="polite"
+            >
                 @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
-                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
                     @if (contactForm.get('name')?.errors?.['required']) {
                         <small>Le nom est requis</small>
                     }
                     @if (contactForm.get('name')?.errors?.['minlength']) {
-                        <small>Minimum 2 caractères</small>
+                        <small>Minimum 2 caractères requis</small>
                     }
                 }        
             </div>    
         </div>
+
         <div class="form-input">
-            <label for="email">Email</label>
-            <input type="email" placeholder="Email" id="email" autocomplete="email" formControlName="email">
-            <div class="container-error">
+            <label for="email">
+                Email <span aria-label="requis">*</span>
+            </label>
+            <input 
+                type="email" 
+                placeholder="votre@email.com" 
+                id="email" 
+                autocomplete="email" 
+                formControlName="email"
+                [attr.aria-invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched"
+                [attr.aria-describedby]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched ? 'email-error' : null"
+                aria-required="true"
+            >
+            <div 
+                class="container-error" 
+                id="email-error"
+                role="alert"
+                aria-live="polite"
+            >
                 @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
-                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
                     @if (contactForm.get('email')?.errors?.['required']) {
                         <small>L'email est requis</small>
                     }
                     @if (contactForm.get('email')?.errors?.['email']) {
-                        <small>Email invalide</small>
+                        <small>Veuillez entrer un email valide</small>
                     }
                 }        
             </div>
         </div>
+
         <div class="form-input">
-            <label for="subject">Sujet</label>
-            <input type="text" placeholder="Sujet" id="subject" autocomplete="off" formControlName="subject">
-            <div class="container-error">
+            <label for="subject">
+                Sujet <span aria-label="requis">*</span>
+            </label>
+            <input 
+                type="text" 
+                placeholder="Objet de votre message" 
+                id="subject" 
+                autocomplete="off" 
+                formControlName="subject"
+                [attr.aria-invalid]="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched"
+                [attr.aria-describedby]="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched ? 'subject-error' : null"
+                aria-required="true"
+            >
+            <div 
+                class="container-error" 
+                id="subject-error"
+                role="alert"
+                aria-live="polite"
+            >
                 @if (contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched) {
-                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
                     @if (contactForm.get('subject')?.errors?.['required']) {
                         <small>Le sujet est requis</small>
                     }
                     @if (contactForm.get('subject')?.errors?.['minlength']) {
-                        <small>Minimum 2 caractères</small>
+                        <small>Minimum 2 caractères requis</small>
                     }
                 }        
             </div>
         </div>
+
         <div class="form-input">
-            <label for="message">Message</label>
-            <textarea name="" id="" placeholder="Message" id="message" autocomplete="off" formControlName="message" autocorrect="on" rows="8"></textarea>
-            <div class="container-error">
+            <label for="message">
+                Message <span aria-label="requis">*</span>
+            </label>
+            <textarea 
+                placeholder="Écrivez votre message ici..." 
+                id="message" 
+                autocomplete="off" 
+                formControlName="message" 
+                autocorrect="on" 
+                rows="8"
+                [attr.aria-invalid]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"
+                [attr.aria-describedby]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched ? 'message-error' : null"
+                aria-required="true"
+            ></textarea>
+            <div 
+                class="container-error" 
+                id="message-error"
+                role="alert"
+                aria-live="polite"
+            >
                 @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
-                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
                     @if (contactForm.get('message')?.errors?.['required']) {
                         <small>Le message est requis</small>
                     }
@@ -58,19 +132,27 @@
             </div>
         </div>
 
-        <button class="send-button" type="submit" [disabled]="contactForm.invalid">
-            <span>Envoyer</span>
+        <button 
+            class="send-button" 
+            type="submit" 
+            [disabled]="contactForm.invalid || isSubmitting"
+            [attr.aria-busy]="isSubmitting"
+            aria-label="Envoyer le message"
+        >
+            <span>{{ isSubmitting ? 'Envoi en cours...' : 'Envoyer' }}</span>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
                 viewBox="0 0 24 24"
                 fill="none"
-                stroke="#ffffff"
+                stroke="white"
                 stroke-width="1.80"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                >
+                aria-hidden="true"
+                focusable="false"
+            >
                 <path d="M10 14l11 -11" />
                 <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5" />
             </svg>
@@ -79,13 +161,14 @@
 </div>
 
 @if (isSubmitting) {
- <app-spinner></app-spinner>
+    <app-spinner role="status" aria-label="Envoi du message en cours"></app-spinner>
 }
 
 <app-status-feedback
-  [show]="showStatus"
-  [type]="statusType"
-  [message]="statusMessage">
+    [show]="showStatus"
+    [type]="statusType"
+    [message]="statusMessage"
+    role="alert"
+    aria-live="assertive"
+    [attr.aria-atomic]="true">
 </app-status-feedback>
-
-
